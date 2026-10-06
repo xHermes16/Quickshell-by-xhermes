@@ -11,15 +11,16 @@ PanelWindow{
         right: true
     }
 
-    height: 36
+    height: 32
 
-    exclusiveZone: 14
+    exclusiveZone: 12
 
     color: "transparent"
 
     Row{
         id: seccionIzq
         anchors.left: parent.left
+        anchors.verticalCenter: parent.verticalCenter
         spacing: TemaPrincipal.rowSpacing
 
         ModuloWorkspaces{}
@@ -35,6 +36,7 @@ PanelWindow{
     Row{
         id:seccionDer
         anchors.right: parent.right
+        anchors.verticalCenter: parent.verticalCenter
         spacing: TemaPrincipal.rowSpacing
         ModuloBateria{}
     }
