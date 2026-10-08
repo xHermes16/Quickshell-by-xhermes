@@ -10,6 +10,7 @@ Item{
     property string horaTexto: ""
     property string fechaTexto: ""
     property bool mostrarFecha: false
+    property bool tema: true
 
     function actualizar(){
         var ahora = new Date()
@@ -35,7 +36,10 @@ Item{
 
     EstiloBoton{
         id: contenido
+        tema: relojModulo.tema
         EstiloTexto{
+            id: texto
+            tema: relojModulo.tema
             text:{
                 if (mostrarFecha){
                     return fechaTexto

@@ -23,7 +23,9 @@ PanelWindow{
         id: seccionCen
         anchors.centerIn: parent
         spacing: TemaPrincipal.rowSpacing
-        ModuloIndicadorApp{}
+        ModuloIndicadorApp{
+            tema: false
+        }
     }
     Row{
         id: seccionDer

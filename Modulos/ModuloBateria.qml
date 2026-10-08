@@ -10,6 +10,7 @@ EstiloBoton{
     property bool cargando: !UPower.onBattery
 
     EstiloTexto{
+        tema: bateriaModulo.tema
         text: (bateriaModulo.cargando ? " " : "") + bateriaModulo.porcentaje + "%"
     }
 }

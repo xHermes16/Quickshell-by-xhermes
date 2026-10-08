@@ -13,15 +13,15 @@ EstiloBoton{
                 width: texto.width + 12
                 height: texto.height + 2
                 radius: width/2
-                color: modelData.active ? TemaPrincipal.textPrimary : TemaPrincipal.bgDark
-                border.color: TemaPrincipal.borderPurple
+                color: modelData.active ? TemaPrincipal.texto : TemaPrincipal.fondo
+                border.color: TemaPrincipal.borde
                 border.width: TemaPrincipal.borderWidth
 
                 EstiloTexto{
                     id: texto
                     anchors.centerIn: parent
                     text: modelData.name
-                    color: modelData.active ? TemaPrincipal.bgDark : TemaPrincipal.textPrimary
+                    color: modelData.active ? TemaPrincipal.fondo : TemaPrincipal.texto
                 }
                 MouseArea{
                     anchors.fill: parent

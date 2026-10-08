@@ -3,9 +3,13 @@ import QtQuick
 
 QtObject{
     //---------------Colores
-    readonly property color bgDark: "#e6190026"
-    readonly property color borderPurple: "#320064"
-    readonly property color textPrimary: "#d000ff"
+    readonly property color fondo: '#d1190026'
+    readonly property color borde: "#320064"
+    readonly property color texto: "#d000ff"
+    //-----------------Colores dos
+    readonly property color fondoDos: '#d3a84c'
+    readonly property color bordeDos: '#ffd67c'
+    readonly property color textoDos: '#775a1c'
 
     //---------------------Tipografia
     readonly property string fontFamily: "Germania One"
