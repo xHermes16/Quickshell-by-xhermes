@@ -6,8 +6,8 @@ Rectangle{
     default property alias content: contentContainer.children
     property bool tema: true
 
-    implicitWidth: contentContainer.implicitWidth + 24
-    implicitHeight: contentContainer.implicitHeight + 10
+    implicitWidth: contentContainer.implicitWidth > 0 ? contentContainer.implicitWidth + 24 : 0
+    implicitHeight: contentContainer.implicitHeight > 0 ? contentContainer.implicitHeight + 10 : 0
 
     radius: TemaPrincipal.cornerRadius
     color: tema ? TemaPrincipal.fondo : TemaPrincipal.fondoDos
